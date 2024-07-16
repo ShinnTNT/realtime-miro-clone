@@ -22,7 +22,7 @@ export default function NewButton() {
           </Hint>
         </div>
       </DialogTrigger>
-      <DialogContent className="p-0 bg-transparent border-none max-w-[480px]">
+      <DialogContent className="p-0 bg-transparent overflow-hidden border-none max-w-[432px]">
         <CreateOrganization routing="hash" />
       </DialogContent>
     </Dialog>
