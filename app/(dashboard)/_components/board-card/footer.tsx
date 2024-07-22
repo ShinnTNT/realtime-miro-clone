@@ -18,6 +18,15 @@ export default function Footer({
   onClick,
   disabled,
 }: FooterProps) {
+  const handleFavourite = (
+    event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    event.stopPropagation();
+    event.preventDefault();
+
+    onClick();
+  };
+
   return (
     <div className="relative bg-white p-3">
       <p className="text-[13px] truncate max-w-[calc(100%-20px)]">{title}</p>
@@ -30,7 +39,7 @@ export default function Footer({
           disabled && "cursor-not-allowed opacity-75"
         )}
         disabled={disabled}
-        onClick={onClick}
+        onClick={handleFavourite}
       >
         <Star
           className={cn(
