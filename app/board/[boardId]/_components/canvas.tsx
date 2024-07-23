@@ -4,7 +4,11 @@ import Info from "./info";
 import Participants from "./participants";
 import Toolbar from "./toolbar";
 
-export default function Canvas() {
+interface CanvasProps {
+  boardId: string;
+}
+
+export default function Canvas({ boardId }: CanvasProps) {
   return (
     <main className="w-full h-full relative bg-neutral-100 touch-none">
       <Info />
