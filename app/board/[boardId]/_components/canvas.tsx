@@ -1,5 +1,6 @@
 "use client";
 
+import { useSelf } from "@liveblocks/react";
 import Info from "./info";
 import Participants from "./participants";
 import Toolbar from "./toolbar";
@@ -9,6 +10,10 @@ interface CanvasProps {
 }
 
 export default function Canvas({ boardId }: CanvasProps) {
+  const info = useSelf((me) => me.info);
+
+  console.log({ info });
+
   return (
     <main className="w-full h-full relative bg-neutral-100 touch-none">
       <Info />
