@@ -68,7 +68,7 @@ export default function Info({ boardId }: InfoProps) {
       <Actions id={data._id} title={data.title} side="bottom" sideOffset={10}>
         <div>
           <Hint label="Main menu" slide="bottom" sideOffset={10}>
-            <Button variant="board">
+            <Button size="icon" variant="board">
               <Menu />
             </Button>
           </Hint>
