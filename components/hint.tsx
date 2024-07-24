@@ -33,7 +33,7 @@ export default function Hint({
           sideOffset={sideOffset}
           alignOffset={alignOffset}
         >
-          <p className="font-semibold capitalize">{label}</p>ne
+          <p className="font-semibold capitalize">{label}</p>
         </TooltipContent>
       </Tooltip>
     </TooltipProvider>
