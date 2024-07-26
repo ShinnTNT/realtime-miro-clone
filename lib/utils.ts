@@ -37,7 +37,7 @@ export function resizeBounds(bounds: XYWH, cornor: Side, point: Point): XYWH {
 
   if ((cornor & Side.Left) === Side.Left) {
     result.x = Math.min(point.x, bounds.x + bounds.width);
-    result.width = Math.abs(bounds.x + bounds.width - bounds.x);
+    result.width = Math.abs(bounds.x + bounds.width - point.x);
   }
 
   if ((cornor & Side.Right) === Side.Right) {
