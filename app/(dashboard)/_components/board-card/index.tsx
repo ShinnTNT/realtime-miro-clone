@@ -62,7 +62,12 @@ export default function BoardCard({
     <Link href={`/board/${id}`}>
       <div className="group aspect-[100/127] border rounded-lg flex flex-col justify-between overflow-hidden">
         <div className="relative flex-1 bg-amber-50">
-          <Image src={imageUrl} fill alt={title} className="object-fill" />
+          <Image
+            src="https://images.pexels.com/photos/1724888/pexels-photo-1724888.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            fill
+            alt={title}
+            className="object-fill"
+          />
           <Actions id={id} title={title} side="right">
             <button className="absolute z-[1] top-1 right-1 opacity-0 group-hover:opacity-100 transition-opacity px-2 py-2 outline-none">
               <MoreHorizontal className="text-white opacity-75 hover:opacity-100 transition-opacity" />
